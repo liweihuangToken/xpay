@@ -54,7 +54,6 @@ public class EmailUtils {
             String content = templateEngine.process(templateName, context);
 
             helper.setText(content, true);
-
             mailSender.send(message);
             log.info("给"+sendto+"发送邮件成功");
         }catch (Exception e){

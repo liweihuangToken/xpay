@@ -98,7 +98,7 @@
         // 判断是否支付宝内打开
         var ua = window.navigator.userAgent.toLowerCase();
         if (ua.indexOf("alipay")<0) {
-            location.href = "http://xpay.exrick.cn";
+            location.href = "http://129.204.121.21:8888";
         }
 
         function GetRequest() {
@@ -119,14 +119,15 @@
         var num = params['num']
 
         // 替换你的支付宝userId
-        var userId = "2088012242122163";
+        //var userId = "2088012242122163";
+        var userId = "2088112094623440";
 
         // 替换你的自定义金额收款码
         var customUrl = "HTTPS://QR.ALIPAY.COM/FKX056982J2XQG6ZOJHOC2";
 
         // 如需红包模式请配置如下信息（正规个人收款没必要使用）
-        var account = "18782059038"; // 支付宝账号（打开支付宝app点击我的上方-个人主页即可看到支付宝账户）
-        var nickName = "Exrick"; // 支付宝昵称（打开支付宝app点击我的上方-个人主页头像下方即你的昵称）
+        var account = "18859801667"; // 支付宝账号（打开支付宝app点击我的上方-个人主页即可看到支付宝账户）
+        var nickName = "伟煌"; // 支付宝昵称（打开支付宝app点击我的上方-个人主页头像下方即你的昵称）
 
         // 如需银行卡转账模式请填写如下信息（正规个人收款没必要使用）
         var bankAccount = "演示使用，请勿支付"; // 持卡人姓名
